@@ -24,21 +24,38 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 162C34.9264 162 45 151.926 45 139.5C45 127.074 34.9264 117 22.5 117C10.0736 117 0 127.074 0 139.5C0 151.926 10.0736 162 22.5 162ZM22 154C30.2843 154 37 147.284 37 139C37 130.716 30.2843 124 22 124C13.7157 124 7 130.716 7 139C7 147.284 13.7157 154 22 154Z"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 103C34.9264 103 45 92.9264 45 80.5C45 68.0736 34.9264 58 22.5 58C10.0736 58 0 68.0736 0 80.5C0 92.9264 10.0736 103 22.5 103ZM22 95C30.2843 95 37 88.2843 37 80C37 71.7157 30.2843 65 22 65C13.7157 65 7 71.7157 7 80C7 88.2843 13.7157 95 22 95Z"/>
             </svg>
-                <ul>
+                <ul class="nav-list">
                     <li> <a class="nav-links" id="nav-links" href="">Home</a></li>
                     <li> <a class="nav-links" id="nav-links" href="">About</a></li>
                     <li> <a class="nav-links" id="nav-links" href="">Projects</a></li>
                     <li> <a class="nav-links" id="nav-links" href="">Contact</a></li>
                 </ul>
             </nav>
+            <ul class="dropdown-list" id="dropdown-list">
+                <li class="dropdown-list-items"> <a class="dropdown-links" id="nav-links" href="">Home</a></li>
+                <li class="dropdown-list-items"> <a class="dropdown-links" id="nav-links" href="">About</a></li>
+                <li class="dropdown-list-items"> <a class="dropdown-links" id="nav-links" href="">Projects</a></li>
+                <li class="dropdown-list-items"> <a class="dropdown-links" id="nav-links" href="">Contact</a></li>
+            </ul>
         </header>
         <div class="home-container">
             <h1 class="heading">Scroll Site</h1>
             <p class="top-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quas beatae porro, asperiores tenetur </p>
             <!-- <a class="link-btn" id="link-btn" href="index.html">Explore</a> -->
             <div class="arrow">
-                <div class="arrow-left"></div>
-                <div class="arrow-right"></div>
+                <svg class="down-arrow" id="down-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="5" width="24" height="14">
+                    <path d="M12.8088 18.1587C12.3671 18.6117 11.6346 18.6135 11.1971 18.1657L0.344185 7.43619C-0.114164 6.99929 -0.114162 6.27607 0.340805 5.82628C0.780836 5.39024 1.51643 5.39201 1.97491 5.83002L11.0962 14.8647L12 15.7044L12.8971 14.8714L22.0464 5.82628C22.4854 5.39127 23.2192 5.39127 23.659 5.82608C24.1136 6.27556 24.1142 6.99661 23.6576 7.43447L12.8088 18.1587Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                    <rect x="-76" width="100" height="24" />
+                    <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-76" y="0" width="100" height="24">
+                    <rect x="-76" width="100" height="24" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask1)">
+                    </g>
+                    </g>
+                </svg>
             </div>
         </div>
     </div>
