@@ -1,10 +1,10 @@
-// // Element.getBoundingClientRect() method returns the size of an element and its position relative to the viewport.
-// // pageYOffset is a read - only window property that returns the number of pixels the document has been scrolled vertically.
-// // slice extracts a section of a string without modifying original string
-// //offsetTop - A Number, representing the top position of the element, in pixels
+// Element.getBoundingClientRect() method returns the size of an element and its position relative to the viewport.
+// pageYOffset is a read - only window property that returns the number of pixels the document has been scrolled vertically.
+// slice extracts a section of a string without modifying original string
+//offsetTop - A Number, representing the top position of the element, in pixels
 
-// // ********** set date ************
-// // select span
+// ********** set date ************
+// select span
 // const date = document.getElementById("date");
 // date.innerHTML = new Date().getFullYear();
 
@@ -26,29 +26,32 @@
 //     // console.log(linksContainer.getBoundingClientRect());
 // });
 
-// // ********** fixed navbar ************
+// ********** fixed navbar ************
 
-// const navbar = document.getElementById("nav");
-// const topLink = document.querySelector(".top-link");
+const navbar = document.querySelector('nav');
+const barsIcon = document.querySelector('#bars-icon');
+const logoIcon = document.querySelector('#logo-icon');
+const navLinks = [...document.querySelectorAll('#nav-links')];
+const clientHeight = window.innerHeight;
 
-// window.addEventListener("scroll", function() {
-//     const scrollHeight = window.pageYOffset;
-//     const navHeight = navbar.getBoundingClientRect().height;
-//     if (scrollHeight > navHeight) {
-//         navbar.classList.add("fixed-nav");
-//     } else {
-//         navbar.classList.remove("fixed-nav");
-//     }
-//     // setup back to top link
-//     if (height > 500) {
-//         topLink.classList.add("show-link");
-//     } else {
-//         topLink.classList.remove("show-link");
-//     }
-// });
+window.addEventListener("scroll", function() {
+    const scrollHeight = window.pageYOffset;
+    if (scrollHeight < clientHeight) {
+        navbar.classList.remove("nav-scrolled");
+        barsIcon.classList.remove("bars-icon-scrolled");
+        logoIcon.classList.remove("logo-icon-scrolled");
+        navLinks.map(link => link.classList.remove("nav-links-scrolled"));
+    } else {
+        navbar.classList.add("nav-scrolled");
+        barsIcon.classList.add('bars-icon-scrolled');
+        logoIcon.classList.add('logo-icon-scrolled');
+        navLinks.map(link => link.classList.add("nav-links-scrolled"));
+    }
+});
 
-// // ********** smooth scroll ************
-// // select links
+
+// ********** smooth scroll ************
+// select links
 // const scrollLinks = document.querySelectorAll(".scroll-link");
 // scrollLinks.forEach((link) => {
 //     link.addEventListener("click", (e) => {
@@ -78,4 +81,4 @@
 //         linksContainer.style.height = 0;
 //     });
 // });
-// // calculate heights
+// calculate heights

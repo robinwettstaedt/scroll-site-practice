@@ -4,9 +4,15 @@
     --secondary-text: #fff;
 }
 
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,15 +21,18 @@ body {
 }
 
 .top-bg {
-    background-image: url(images/ocean.jpg);
+    background-image: url(images/cool-background.png);
     width: 100%;
     height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 }
 
 header {
     width: 100%;
-    position: fixed;
+    position: fixed
 }
 
 .logo-icon {
@@ -42,7 +51,7 @@ header {
 
 nav {
     display: flex;
-    height: 5rem;
+    height: 4rem;
     display: flex;
     align-items: center;
 }
@@ -59,20 +68,25 @@ li {
     margin: 0 1em 0 1em;
 }
 
-a {
+.nav-links {
     text-decoration: none;
     color: var(--secondary-text);
 }
 
-.header-scrolled {
+.nav-scrolled {
     background-color: rgb(255, 255, 255);
 }
 
-.svg-scrolled {
-    color: var(--main-text);
+.logo-icon-scrolled {
+    fill: var(--main-text);
 }
 
-.a-scrolled {
+.bars-icon-scrolled {
+    fill: var(--main-text);
+    stroke: "#000"
+}
+
+.nav-links-scrolled {
     color: var(--main-text);
 }
 
@@ -90,7 +104,7 @@ a {
 
 .top-p {
     text-align: center;
-    margin: 0 2em;
+    margin: 0 2em 8em 2em;
 }
 
 .link-btn {
@@ -99,8 +113,38 @@ a {
     padding: 0.6em 2em;
 }
 
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8em;
+    height: 4em;
+    margin: 0;
+}
+
+.arrow-left {
+    width: 4em;
+    height: 0;
+    border: 1px solid var(--secondary-text);
+    transform: rotate(40deg);
+    border-color: var(--secondary-text);
+    margin-right: -0.5em;
+}
+
+.arrow-right {
+    width: 4em;
+    height: 0;
+    border: 1px solid var(--secondary-text);
+    transform: rotate(-40deg);
+    margin-left: -0.5em;
+}
+
 .about-container {
     height: 80vh;
+}
+
+.about-heading {
+    margin-top: 4em;
 }
 
 .projects-container {
