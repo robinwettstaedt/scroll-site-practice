@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
  :root {
-    --menu-bg-color: rgba(0, 0, 0, 0.2);
+    --menu-bg-color: rgba(0, 0, 0, 0.3);
     --main-text: #000;
     --secondary-text: #fff;
     --transition-time: 0.3s;
@@ -36,6 +36,7 @@ header {
     width: 100%;
     position: fixed;
     margin: 0;
+    z-index: 999;
 }
 
 .nav-container {
@@ -44,11 +45,15 @@ header {
     margin: 0;
     display: flex;
     align-items: center;
+    backdrop-filter: blur(2px);
 }
 
 .nav-con-bg-change {
     background-color: var(--menu-bg-color);
-    backdrop-filter: blur(5px);
+}
+
+.wide-screen-nav {
+    display: none;
 }
 
 .logo-icon {
@@ -83,22 +88,16 @@ header {
     fill: var(--secondary-text);
 }
 
-.nav-scrolled {
-    background-color: var(--secondary-text);
-}
-
-.nav-links-scrolled {
-    color: var(--main-text);
-}
-
 .nav-toggle {
     position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;
 }
 
-nav {
+.dropdown-nav {
+    position: absolute;
     width: 100vw;
+    top: 100%;
     margin: 0;
     text-align: right;
     transform: scale(1, 0);
@@ -106,23 +105,22 @@ nav {
     transition: transform var(--transition-time);
 }
 
-.nav-toggle:checked~nav {
+.nav-toggle:checked~.dropdown-nav {
     transform: scale(1, 1);
 }
 
-nav ul {
+.dropdown-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    transition: opacity var(--transition-time) ease-in-out;
 }
 
-nav li {
+.dropdown-nav li {
     padding-top: 0.7em;
     padding-bottom: 1.2em;
 }
 
-nav a {
+.dropdown-nav a {
     font-size: 1.2rem;
     text-decoration: none;
     padding-right: 1.1em;
@@ -131,13 +129,13 @@ nav a {
     transition: opacity 50ms ease-in-out;
 }
 
-.nav-toggle:checked~nav ul {
+.nav-toggle:checked~.dropdown-nav ul {
     background-color: var(--menu-bg-color);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     transition: opacity var(--transition-time) ease-in-out var(--transition-time);
 }
 
-.nav-toggle:checked~nav a {
+.nav-toggle:checked~.dropdown-nav a {
     opacity: 1;
     transition: opacity var(--transition-time) ease-in-out 200ms;
 }
@@ -180,56 +178,98 @@ nav a {
     fill: var(--secondary-text);
 }
 
+.arrow-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8em;
+    height: 4em;
+    margin: 30rem 0 0 0;
+}
+
+.down-arrow-2 {
+    width: 4rem;
+    padding: 1rem;
+    fill: var(--main-text);
+}
+
 .about-container {
-    height: 80vh;
+    height: 100vh;
 }
 
 .about-heading {
-    margin-top: 4em;
+    margin-top: 3em;
 }
 
 .projects-container {
-    height: 80vh;
+    height: 100vh;
 }
 
 .contact-container {
-    height: 80vh;
+    height: 100vh;
 }
 
-@media screen and (min-width: 480px) {
-    .dropdown-list li {
-        display: none;
-    }
+
+/* @media screen and (min-width: 480px) {
     .bars-icon {
         display: none;
     }
-    .nav-list {
-        display: block;
-        margin: 0 1em 0 auto;
+    nav {
+        position: absolute;
+        width: 100vw;
+        top: 100%;
+        margin: 0;
+        text-align: right;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform var(--transition-time);
     }
-    .nav-list li {
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        padding-top: 0.7em;
+        padding-bottom: 1.2em;
+    }
+    nav a {
         font-size: 1.2rem;
-        margin: 0 0.5em;
+        text-decoration: none;
+        padding-right: 1.1em;
+        color: var(--secondary-text);
+        opacity: 0;
+        transition: opacity 50ms ease-in-out;
     }
-}
+} */
 
 @media screen and (min-width: 769px) {
-    .dropdown-list li {
-        display: none;
-    }
     .logo-icon {
         width: 2.5rem;
     }
-    .bars-icon {
+    .nav-toggle-label {
         display: none;
     }
-    .nav-list {
-        display: block;
-        margin: 0 2em 0 auto;
+    .nav-toggle:checked~.dropdown-nav {
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform var(--transition-time);
     }
-    .nav-list li {
+    .wide-screen-nav {
+        display: block;
+        margin: 0;
+    }
+    .wide-screen-nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .wide-screen-nav a {
         font-size: 1.5rem;
-        margin: 0 0.5em;
+        text-decoration: none;
+        padding: 1em 1.3em 0.7em 1.3em;
+        color: var(--secondary-text);
     }
 }
 

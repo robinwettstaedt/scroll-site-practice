@@ -16,7 +16,14 @@
                 <svg class="logo-icon" id="logo-icon" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
                     <path d="M 15.6875 4 C 14.113281 4 12.652344 4.867188 11.875 6.25 L 2.59375 22.78125 C 1.816406 24.160156 1.816406 25.839844 2.59375 27.21875 L 11.875 43.75 C 12.652344 45.132813 14.113281 46 15.6875 46 L 34.3125 46 C 35.886719 46 37.347656 45.132813 38.125 43.75 L 47.40625 27.21875 C 48.183594 25.839844 48.183594 24.160156 47.40625 22.78125 L 38.125 6.25 C 37.347656 4.867188 35.886719 4 34.3125 4 Z M 15.6875 6 L 34.3125 6 C 35.15625 6 35.941406 6.449219 36.375 7.21875 L 39.0625 12 L 17.5 12 L 17.21875 12.5 L 11.15625 23 L 7.90625 17.375 L 13.625 7.21875 C 14.058594 6.449219 14.84375 6 15.6875 6 Z M 18.65625 14 L 31.34375 14 L 37.71875 25 L 34.125 31.21875 L 31.34375 36 L 18.65625 36 L 17.5 34.03125 L 14.90625 29.53125 L 12.28125 25 Z M 33.65625 14 L 40.1875 14 L 45.6875 23.75 C 46.121094 24.519531 46.121094 25.480469 45.6875 26.25 L 36.375 42.78125 C 35.941406 43.550781 35.15625 44 34.3125 44 L 29.0625 44 L 32.5 38 L 32.78125 37.5 L 39.71875 25.5 L 40 25 L 39.71875 24.5 Z M 25 19 C 21.699219 19 19 21.699219 19 25 C 19 28.300781 21.699219 31 25 31 C 28.300781 31 31 28.300781 31 25 C 31 21.699219 28.300781 19 25 19 Z M 6.75 19.40625 L 10 25 L 10.28125 25.5 L 15.78125 35.03125 L 17.21875 37.5 L 17.5 38 L 30.1875 38 L 26.71875 44 L 15.6875 44 C 14.84375 44 14.058594 43.550781 13.625 42.78125 L 4.3125 26.25 C 3.878906 25.480469 3.878906 24.519531 4.3125 23.75 Z M 25 21 C 27.222656 21 29 22.777344 29 25 C 29 27.222656 27.222656 29 25 29 C 22.777344 29 21 27.222656 21 25 C 21 22.777344 22.777344 21 25 21 Z"/>
                 </svg>
-
+                <nav class="wide-screen-nav" id="wide-screen-nav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
                 <label for="nav-toggle" class="nav-toggle-label">
                     <svg class="bars-icon" id="bars-icon" viewBox="0 0 180 162" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="63" y="14" width="117" height="16" rx="8"/>
@@ -29,7 +36,7 @@
                 </label>
             </div>
             <input type="checkbox" name="nav-toggle" id="nav-toggle" class="nav-toggle">
-            <nav>
+            <nav class="dropdown-nav">
                 <ul>
                     <li onclick="location.href='index.html';" style="cursor: pointer;"><a href="index.html">Home</a></li>
                     <li onclick="location.href='index.html';" style="cursor: pointer;"> <a href="">About</a></li>
@@ -42,7 +49,7 @@
             <h1 class="heading">Scroll Site</h1>
             <p class="top-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quas beatae porro, asperiores tenetur </p>
             <!-- <a class="link-btn" id="link-btn" href="index.html">Explore</a> -->
-            <div class="arrow">
+            <div class="arrow" id="arrow">
                 <svg class="down-arrow" id="down-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="5" width="24" height="14">
                     <path d="M12.8088 18.1587C12.3671 18.6117 11.6346 18.6135 11.1971 18.1657L0.344185 7.43619C-0.114164 6.99929 -0.114162 6.27607 0.340805 5.82628C0.780836 5.39024 1.51643 5.39201 1.97491 5.83002L11.0962 14.8647L12 15.7044L12.8971 14.8714L22.0464 5.82628C22.4854 5.39127 23.2192 5.39127 23.659 5.82608C24.1136 6.27556 24.1142 6.99661 23.6576 7.43447L12.8088 18.1587Z" fill="white"/>
@@ -59,8 +66,23 @@
             </div>
         </div>
     </div>
-    <div class="about-container">
+    <div class="about-container" id="about-container">
         <h1 class="about-heading">About Us</h1>
+        <div class="arrow-2" id="arrow-2">
+            <svg class="down-arrow-2" id="down-arrow-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="5" width="24" height="14">
+                <path d="M12.8088 18.1587C12.3671 18.6117 11.6346 18.6135 11.1971 18.1657L0.344185 7.43619C-0.114164 6.99929 -0.114162 6.27607 0.340805 5.82628C0.780836 5.39024 1.51643 5.39201 1.97491 5.83002L11.0962 14.8647L12 15.7044L12.8971 14.8714L22.0464 5.82628C22.4854 5.39127 23.2192 5.39127 23.659 5.82608C24.1136 6.27556 24.1142 6.99661 23.6576 7.43447L12.8088 18.1587Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask0)">
+                <rect x="-76" width="100" height="24" />
+                <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-76" y="0" width="100" height="24">
+                <rect x="-76" width="100" height="24" fill="white"/>
+                </mask>
+                <g mask="url(#mask1)">
+                </g>
+                </g>
+            </svg>
+        </div>
     </div>
     <div class="projects-container">
         <h1>Projects</h1>
