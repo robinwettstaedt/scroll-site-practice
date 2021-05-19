@@ -1,6 +1,7 @@
 // ********** fixed navbar ************
 
 const navbar = document.querySelector('nav');
+const navContainer = document.querySelector('.nav-container');
 const barsIcon = document.querySelector('#bars-icon');
 const logoIcon = document.querySelector('#logo-icon');
 const navLinks = [...document.querySelectorAll('#nav-links')];
@@ -25,24 +26,38 @@ window.addEventListener("scroll", function() {
 });
 
 barsIcon.addEventListener('click', function() {
-    if (isDropped) {
-        navbar.classList.remove("nav-menu-opened");
-        dropdownMenu.classList.remove("dropdown-list-opened");
-        barsIcon.classList.remove("bars-icon-menu-opened");
-        logoIcon.classList.remove("logo-icon-menu-opened");
-        dropdownListItems.map(item => item.classList.remove("dropdown-list-items-visible"));
-        isDropped = false;
-
-    } else {
-        navbar.classList.add("nav-menu-opened");
-        dropdownMenu.classList.add("dropdown-list-opened");
+    if (!isDropped) {
+        navContainer.classList.add('nav-con-bg-change');
         barsIcon.classList.add("bars-icon-menu-opened");
         logoIcon.classList.add("logo-icon-menu-opened");
-        dropdownListItems.map(item => item.classList.add("dropdown-list-items-visible"));
         isDropped = true;
-
+    } else {
+        navContainer.classList.remove('nav-con-bg-change');
+        barsIcon.classList.remove("bars-icon-menu-opened");
+        logoIcon.classList.remove("logo-icon-menu-opened");
+        isDropped = false;
     }
-})
+});
+
+// barsIcon.addEventListener('click', function() {
+//     if (isDropped) {
+//         navbar.classList.remove("nav-menu-opened");
+//         dropdownMenu.classList.remove("dropdown-list-opened");
+//         barsIcon.classList.remove("bars-icon-menu-opened");
+//         logoIcon.classList.remove("logo-icon-menu-opened");
+//         dropdownListItems.map(item => item.classList.remove("dropdown-list-items-visible"));
+//         isDropped = false;
+
+//     } else {
+//         navbar.classList.add("nav-menu-opened");
+//         dropdownMenu.classList.add("dropdown-list-opened");
+//         barsIcon.classList.add("bars-icon-menu-opened");
+//         logoIcon.classList.add("logo-icon-menu-opened");
+//         dropdownListItems.map(item => item.classList.add("dropdown-list-items-visible"));
+//         isDropped = true;
+
+//     }
+// })
 
 // barsIcon.addEventListener('click', function() {
 //     if (dropdownMenu.style.display === "block") {
