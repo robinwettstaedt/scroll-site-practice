@@ -40,7 +40,6 @@ header {
 }
 
 .nav-container {
-    display: flex;
     height: 4rem;
     margin: 0;
     display: flex;
@@ -169,7 +168,8 @@ header {
     justify-content: center;
     width: 8em;
     height: 4em;
-    margin: 0;
+    margin: 60vh 0 0 0;
+    padding: 1rem;
 }
 
 .down-arrow {
@@ -178,16 +178,7 @@ header {
     fill: var(--secondary-text);
 }
 
-.arrow-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 8em;
-    height: 4em;
-    margin: 30rem 0 0 0;
-}
-
-.down-arrow-2 {
+.down-arrow-dark {
     width: 4rem;
     padding: 1rem;
     fill: var(--main-text);
@@ -205,8 +196,33 @@ header {
     height: 100vh;
 }
 
+.projects-heading {
+    margin-top: 3em;
+}
+
 .contact-container {
     height: 100vh;
+}
+
+.contact-heading {
+    margin-top: 3em;
+}
+
+footer {
+    background-color: var(--menu-bg-color);
+    height: 12rem;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedin {
+    width: 2rem;
+    padding: 1em 1.5em 1em 1.5em;
+    fill: var(--secondary-text);
+    stroke-width: 1.5px;
 }
 
 

@@ -5,43 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll Site Practice</title>
+    <title>Website</title>
     <link rel="stylesheet" href="style.css" class="css">
 </head>
 
 <body>
-    <div class="top-bg">
+    <div class="top-bg" id="top-bg">
         <header>
             <div class="nav-container">
                 <svg class="logo-icon" id="logo-icon" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                    <path d="M 15.6875 4 C 14.113281 4 12.652344 4.867188 11.875 6.25 L 2.59375 22.78125 C 1.816406 24.160156 1.816406 25.839844 2.59375 27.21875 L 11.875 43.75 C 12.652344 45.132813 14.113281 46 15.6875 46 L 34.3125 46 C 35.886719 46 37.347656 45.132813 38.125 43.75 L 47.40625 27.21875 C 48.183594 25.839844 48.183594 24.160156 47.40625 22.78125 L 38.125 6.25 C 37.347656 4.867188 35.886719 4 34.3125 4 Z M 15.6875 6 L 34.3125 6 C 35.15625 6 35.941406 6.449219 36.375 7.21875 L 39.0625 12 L 17.5 12 L 17.21875 12.5 L 11.15625 23 L 7.90625 17.375 L 13.625 7.21875 C 14.058594 6.449219 14.84375 6 15.6875 6 Z M 18.65625 14 L 31.34375 14 L 37.71875 25 L 34.125 31.21875 L 31.34375 36 L 18.65625 36 L 17.5 34.03125 L 14.90625 29.53125 L 12.28125 25 Z M 33.65625 14 L 40.1875 14 L 45.6875 23.75 C 46.121094 24.519531 46.121094 25.480469 45.6875 26.25 L 36.375 42.78125 C 35.941406 43.550781 35.15625 44 34.3125 44 L 29.0625 44 L 32.5 38 L 32.78125 37.5 L 39.71875 25.5 L 40 25 L 39.71875 24.5 Z M 25 19 C 21.699219 19 19 21.699219 19 25 C 19 28.300781 21.699219 31 25 31 C 28.300781 31 31 28.300781 31 25 C 31 21.699219 28.300781 19 25 19 Z M 6.75 19.40625 L 10 25 L 10.28125 25.5 L 15.78125 35.03125 L 17.21875 37.5 L 17.5 38 L 30.1875 38 L 26.71875 44 L 15.6875 44 C 14.84375 44 14.058594 43.550781 13.625 42.78125 L 4.3125 26.25 C 3.878906 25.480469 3.878906 24.519531 4.3125 23.75 Z M 25 21 C 27.222656 21 29 22.777344 29 25 C 29 27.222656 27.222656 29 25 29 C 22.777344 29 21 27.222656 21 25 C 21 22.777344 22.777344 21 25 21 Z"/>
-                </svg>
+                        <path d="M 15.6875 4 C 14.113281 4 12.652344 4.867188 11.875 6.25 L 2.59375 22.78125 C 1.816406 24.160156 1.816406 25.839844 2.59375 27.21875 L 11.875 43.75 C 12.652344 45.132813 14.113281 46 15.6875 46 L 34.3125 46 C 35.886719 46 37.347656 45.132813 38.125 43.75 L 47.40625 27.21875 C 48.183594 25.839844 48.183594 24.160156 47.40625 22.78125 L 38.125 6.25 C 37.347656 4.867188 35.886719 4 34.3125 4 Z M 15.6875 6 L 34.3125 6 C 35.15625 6 35.941406 6.449219 36.375 7.21875 L 39.0625 12 L 17.5 12 L 17.21875 12.5 L 11.15625 23 L 7.90625 17.375 L 13.625 7.21875 C 14.058594 6.449219 14.84375 6 15.6875 6 Z M 18.65625 14 L 31.34375 14 L 37.71875 25 L 34.125 31.21875 L 31.34375 36 L 18.65625 36 L 17.5 34.03125 L 14.90625 29.53125 L 12.28125 25 Z M 33.65625 14 L 40.1875 14 L 45.6875 23.75 C 46.121094 24.519531 46.121094 25.480469 45.6875 26.25 L 36.375 42.78125 C 35.941406 43.550781 35.15625 44 34.3125 44 L 29.0625 44 L 32.5 38 L 32.78125 37.5 L 39.71875 25.5 L 40 25 L 39.71875 24.5 Z M 25 19 C 21.699219 19 19 21.699219 19 25 C 19 28.300781 21.699219 31 25 31 C 28.300781 31 31 28.300781 31 25 C 31 21.699219 28.300781 19 25 19 Z M 6.75 19.40625 L 10 25 L 10.28125 25.5 L 15.78125 35.03125 L 17.21875 37.5 L 17.5 38 L 30.1875 38 L 26.71875 44 L 15.6875 44 C 14.84375 44 14.058594 43.550781 13.625 42.78125 L 4.3125 26.25 C 3.878906 25.480469 3.878906 24.519531 4.3125 23.75 Z M 25 21 C 27.222656 21 29 22.777344 29 25 C 29 27.222656 27.222656 29 25 29 C 22.777344 29 21 27.222656 21 25 C 21 22.777344 22.777344 21 25 21 Z"/>
+                    </svg>
                 <nav class="wide-screen-nav" id="wide-screen-nav">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#top-bg">Home</a></li>
+                        <li><a href="#about-container">About</a></li>
+                        <li><a href="#projects-container">Projects</a></li>
+                        <li><a href="#contact-container">Contact</a></li>
                     </ul>
                 </nav>
                 <label for="nav-toggle" class="nav-toggle-label">
-                    <svg class="bars-icon" id="bars-icon" viewBox="0 0 180 162" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="63" y="14" width="117" height="16" rx="8"/>
-                        <rect x="63" y="131" width="117" height="16" rx="8"/>
-                        <path d="M63 80C63 75.5817 66.5817 72 71 72H172C176.418 72 180 75.5817 180 80V80C180 84.4183 176.418 88 172 88H71C66.5817 88 63 84.4183 63 80V80Z"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM22 37C30.2843 37 37 30.2843 37 22C37 13.7157 30.2843 7 22 7C13.7157 7 7 13.7157 7 22C7 30.2843 13.7157 37 22 37Z"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 162C34.9264 162 45 151.926 45 139.5C45 127.074 34.9264 117 22.5 117C10.0736 117 0 127.074 0 139.5C0 151.926 10.0736 162 22.5 162ZM22 154C30.2843 154 37 147.284 37 139C37 130.716 30.2843 124 22 124C13.7157 124 7 130.716 7 139C7 147.284 13.7157 154 22 154Z"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 103C34.9264 103 45 92.9264 45 80.5C45 68.0736 34.9264 58 22.5 58C10.0736 58 0 68.0736 0 80.5C0 92.9264 10.0736 103 22.5 103ZM22 95C30.2843 95 37 88.2843 37 80C37 71.7157 30.2843 65 22 65C13.7157 65 7 71.7157 7 80C7 88.2843 13.7157 95 22 95Z"/>
-                    </svg>
-                </label>
+                        <svg class="bars-icon" id="bars-icon" viewBox="0 0 180 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="63" y="14" width="117" height="16" rx="8"/>
+                            <rect x="63" y="131" width="117" height="16" rx="8"/>
+                            <path d="M63 80C63 75.5817 66.5817 72 71 72H172C176.418 72 180 75.5817 180 80V80C180 84.4183 176.418 88 172 88H71C66.5817 88 63 84.4183 63 80V80Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM22 37C30.2843 37 37 30.2843 37 22C37 13.7157 30.2843 7 22 7C13.7157 7 7 13.7157 7 22C7 30.2843 13.7157 37 22 37Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 162C34.9264 162 45 151.926 45 139.5C45 127.074 34.9264 117 22.5 117C10.0736 117 0 127.074 0 139.5C0 151.926 10.0736 162 22.5 162ZM22 154C30.2843 154 37 147.284 37 139C37 130.716 30.2843 124 22 124C13.7157 124 7 130.716 7 139C7 147.284 13.7157 154 22 154Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 103C34.9264 103 45 92.9264 45 80.5C45 68.0736 34.9264 58 22.5 58C10.0736 58 0 68.0736 0 80.5C0 92.9264 10.0736 103 22.5 103ZM22 95C30.2843 95 37 88.2843 37 80C37 71.7157 30.2843 65 22 65C13.7157 65 7 71.7157 7 80C7 88.2843 13.7157 95 22 95Z"/>
+                        </svg>
+                    </label>
             </div>
             <input type="checkbox" name="nav-toggle" id="nav-toggle" class="nav-toggle">
             <nav class="dropdown-nav">
-                <ul>
-                    <li onclick="location.href='index.html';" style="cursor: pointer;"><a href="index.html">Home</a></li>
-                    <li onclick="location.href='index.html';" style="cursor: pointer;"> <a href="">About</a></li>
-                    <li onclick="location.href='index.html';" style="cursor: pointer;"> <a href="">Projects</a></li>
-                    <li onclick="location.href='index.html';" style="cursor: pointer;"> <a href="">Contact</a></li>
+                <ul id="nav-list-mobile">
+                    <li id="home-li" onclick="location.href='#top-bg';" style="cursor: pointer;"><a id="home-a" href="#top-bg">Home</a></li>
+                    <li onclick="location.href='#about-container';" style="cursor: pointer;"> <a href="#about-container">About</a></li>
+                    <li onclick="location.href='#projects-container';" style="cursor: pointer;"> <a href="#projects-container">Projects</a></li>
+                    <li onclick="location.href='#contact-container';" style="cursor: pointer;"> <a href="#contact-container">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -49,8 +49,27 @@
             <h1 class="heading">Scroll Site</h1>
             <p class="top-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quas beatae porro, asperiores tenetur </p>
             <!-- <a class="link-btn" id="link-btn" href="index.html">Explore</a> -->
-            <div class="arrow" id="arrow">
+            <a href="#about-container" class="arrow-top" id="arrow">
                 <svg class="down-arrow" id="down-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="5" width="24" height="14">
+                        <path d="M12.8088 18.1587C12.3671 18.6117 11.6346 18.6135 11.1971 18.1657L0.344185 7.43619C-0.114164 6.99929 -0.114162 6.27607 0.340805 5.82628C0.780836 5.39024 1.51643 5.39201 1.97491 5.83002L11.0962 14.8647L12 15.7044L12.8971 14.8714L22.0464 5.82628C22.4854 5.39127 23.2192 5.39127 23.659 5.82608C24.1136 6.27556 24.1142 6.99661 23.6576 7.43447L12.8088 18.1587Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                        <rect x="-76" width="100" height="24" />
+                        <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-76" y="0" width="100" height="24">
+                        <rect x="-76" width="100" height="24" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask1)">
+                        </g>
+                        </g>
+                    </svg>
+            </a>
+        </div>
+    </div>
+    <div class="about-container" id="about-container">
+        <h1 class="about-heading">About Us</h1>
+        <a href="#projects-container" class="arrow" id="arrow">
+            <svg class="down-arrow-dark" id="down-arrow-dark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="5" width="24" height="14">
                     <path d="M12.8088 18.1587C12.3671 18.6117 11.6346 18.6135 11.1971 18.1657L0.344185 7.43619C-0.114164 6.99929 -0.114162 6.27607 0.340805 5.82628C0.780836 5.39024 1.51643 5.39201 1.97491 5.83002L11.0962 14.8647L12 15.7044L12.8971 14.8714L22.0464 5.82628C22.4854 5.39127 23.2192 5.39127 23.659 5.82608C24.1136 6.27556 24.1142 6.99661 23.6576 7.43447L12.8088 18.1587Z" fill="white"/>
                     </mask>
@@ -63,36 +82,50 @@
                     </g>
                     </g>
                 </svg>
-            </div>
-        </div>
+        </a>
     </div>
-    <div class="about-container" id="about-container">
-        <h1 class="about-heading">About Us</h1>
-        <div class="arrow-2" id="arrow-2">
-            <svg class="down-arrow-2" id="down-arrow-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="5" width="24" height="14">
-                <path d="M12.8088 18.1587C12.3671 18.6117 11.6346 18.6135 11.1971 18.1657L0.344185 7.43619C-0.114164 6.99929 -0.114162 6.27607 0.340805 5.82628C0.780836 5.39024 1.51643 5.39201 1.97491 5.83002L11.0962 14.8647L12 15.7044L12.8971 14.8714L22.0464 5.82628C22.4854 5.39127 23.2192 5.39127 23.659 5.82608C24.1136 6.27556 24.1142 6.99661 23.6576 7.43447L12.8088 18.1587Z" fill="white"/>
-                </mask>
-                <g mask="url(#mask0)">
-                <rect x="-76" width="100" height="24" />
-                <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-76" y="0" width="100" height="24">
-                <rect x="-76" width="100" height="24" fill="white"/>
-                </mask>
-                <g mask="url(#mask1)">
-                </g>
-                </g>
-            </svg>
-        </div>
+    <div class="projects-container" id="projects-container">
+        <h1 class="projects-heading">Projects</h1>
+        <a href="#contact-container" class="arrow" id="arrow">
+            <svg class="down-arrow-dark" id="down-arrow-dark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="5" width="24" height="14">
+                    <path d="M12.8088 18.1587C12.3671 18.6117 11.6346 18.6135 11.1971 18.1657L0.344185 7.43619C-0.114164 6.99929 -0.114162 6.27607 0.340805 5.82628C0.780836 5.39024 1.51643 5.39201 1.97491 5.83002L11.0962 14.8647L12 15.7044L12.8971 14.8714L22.0464 5.82628C22.4854 5.39127 23.2192 5.39127 23.659 5.82608C24.1136 6.27556 24.1142 6.99661 23.6576 7.43447L12.8088 18.1587Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                    <rect x="-76" width="100" height="24" />
+                    <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-76" y="0" width="100" height="24">
+                    <rect x="-76" width="100" height="24" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask1)">
+                    </g>
+                    </g>
+                </svg>
+        </a>
     </div>
-    <div class="projects-container">
-        <h1>Projects</h1>
+    <div class="contact-container" id="contact-container">
+        <h1 class="contact-heading">Contact</h1>
+        <a href="#footer" class="arrow" id="arrow">
+            <svg class="down-arrow-dark" id="down-arrow-dark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="5" width="24" height="14">
+                    <path d="M12.8088 18.1587C12.3671 18.6117 11.6346 18.6135 11.1971 18.1657L0.344185 7.43619C-0.114164 6.99929 -0.114162 6.27607 0.340805 5.82628C0.780836 5.39024 1.51643 5.39201 1.97491 5.83002L11.0962 14.8647L12 15.7044L12.8971 14.8714L22.0464 5.82628C22.4854 5.39127 23.2192 5.39127 23.659 5.82608C24.1136 6.27556 24.1142 6.99661 23.6576 7.43447L12.8088 18.1587Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                    <rect x="-76" width="100" height="24" />
+                    <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-76" y="0" width="100" height="24">
+                    <rect x="-76" width="100" height="24" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask1)">
+                    </g>
+                    </g>
+                </svg>
+        </a>
     </div>
-    <div class="contact-container">
-        <h1>Contact</h1>
-    </div>
-    <footer></footer>
-
-
+    <footer id="footer">
+        <p style="color: white">Something that belongs into a footer</p>
+        <!-- <svg class="linkedin" version="1.1" viewBox="0 0 183.836 179.8984" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g><path d="M21.5663,0C9.0703,0,0,8.6172,0,20.488c0,11.8636,8.8907,20.4748,21.1367,20.4748c6.3516,0,11.8244-2.0584,15.828-5.9552   c3.84-3.738,5.9572-8.8944,5.9532-14.6132C42.6367,8.3868,33.8555,0,21.5663,0z M31.3867,29.2732   c-2.4804,2.4144-6.0272,3.6896-10.25,3.6896C13.4023,32.9628,8,27.834,8,20.488C8,13.0196,13.4531,8,21.5663,8   c7.9337,0,13.172,4.9392,13.3516,12.49C34.9179,23.9376,33.664,27.0564,31.3867,29.2732z"/><path d="M3.836,179.8984h35.9531V47.7208H3.836V179.8984z M11.836,55.7208h19.9531v116.1776H11.836V55.7208z"/><path d="M134.5939,47.7208c-16.672,0-26.8792,5.7536-32.7932,11.166l-1.1247-11.166H60v132.1776h39.836v-69.4708   c0-2.992,1.2107-9.2052,1.9727-10.8456c4.8124-10.3652,11.3044-10.3652,21.1364-10.3652c11.3244,0,20.8909,10.6192,20.8909,23.1876   v67.494h40v-74.6816C183.836,65.7128,158.3087,47.7208,134.5939,47.7208z M175.836,171.8984h-24v-59.494   c0-16.9064-13.2305-31.1876-28.8909-31.1876c-10.0468,0-21.4336,0-28.3944,14.998c-1.4376,3.0996-2.7147,10.5292-2.7147,14.2128   v61.4708H68V55.7208h25.4415l1.6328,16.1776h6.5544l1.172-1.8908c2.668-4.2948,11.1056-14.2868,31.7932-14.2868   c19.8632,0,41.2421,15.488,41.2421,49.496V171.8984z"/></g>
+        </svg> -->
+    </footer>
     <script src="script.js"></script>
 </body>
 
